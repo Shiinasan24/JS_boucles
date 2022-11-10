@@ -64,10 +64,21 @@ header a:hover {
 
 /* MAIN */
 
+#sectTop {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 h1 {
     text-align: center;
     margin-top: 5rem;
+}
+
+#whoIs {
+    padding: 2rem 0;
 }
 
 button {
@@ -83,6 +94,25 @@ button {
 button:hover {
     background-color: grey;
     color: white;
+}
+
+.btn {
+    padding: 2em 2em;
+    background-color: rgb(206, 206, 206);
+    border: solid 1px white;
+    border-radius: 50%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+} 
+
+.btn:hover {
+    background-color: grey;
+    color: white;
+}
+
+#down {
+    scroll-behavior: smooth;
 }
 
 .containerFlexCol {
