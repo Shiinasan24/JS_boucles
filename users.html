@@ -35,31 +35,43 @@
 
                 <button class="btnUsers">Montrer les utilisateurs</button>
 
-                <div class="containerToggle hide">
-                    <h2>Utilisateurs</h2>
-                    <div class="array">
+                <div class="hide" id="containerToggle">
 
-                        <div id="js-userFirstName">
-                            <h3>First Name</h3>
+                    <div class="f-col f-center">
+
+                        <h2>Utilisateurs</h2>
+
+                        <div class="array">
+
+                            <div id="js-userFirstName">
+                                <h3>First Name</h3>
+                            </div>
+
+                            <div id="js-userLastName">
+                                <h3>Last Name</h3>
+                            </div>
+
+                            <div id="js-userMail">
+                                <h3>Mail</h3>
+                            </div>
+
                         </div>
-
-                        <div id="js-userLastName">
-                            <h3>Last Name</h3>
-                        </div>
-
-                        <div id="js-userMail">
-                            <h3>Mail</h3>
-                        </div>
-
+                        <div id="tableUsers"></div>
                     </div>
+
                 </div>
 
                 <div id="js-addUser" class="hide">
+
                     <button class="btnUsers" id="js-btnShowForm">Ajouter un utilisateur</button>
+
                 </div>
 
                 <div class="hide" id="formNewUser">
+
+                    <!-- Form new User -->
                     <form action="" class="f-col">
+
                         <label for="userFirstName">First name:</label>
                         <input type="text" name="userFirstName" id="newFirstName">
 
