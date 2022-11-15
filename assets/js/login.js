@@ -1,5 +1,5 @@
 let users = [
-    ["A", "B", "a.b@", "a.b"],
+    ["A", "B", "admin@", "admin"],
     ["Anthony", "Bonis", "anthony.bonis@gmail.com", "anthony.bonis"],
     ["Romain", "Cardot", "romain.cardot@gmail.com", "romain.cardot"],
     ["Quentin", "Colombier", "quentin.colombier@gmail.com", "quentin.colombier"],
@@ -11,8 +11,6 @@ let users = [
 let inputEmail = document.getElementById("inputEmail");
 let inputPassword = document.getElementById("inputPassword");
 const btnLogin = document.getElementById("btnLogIn")
-
-btnLogin.addEventListener("click", checkLogs)
 
 
 function checkLogs() {
@@ -36,4 +34,11 @@ function checkLogs() {
             return
         }
     }
+}
+
+const formLogs = document.getElementById("formLogs")
+
+formLogs.onsubmit = (e) => {
+    checkLogs()
+    e.preventDefault();
 }

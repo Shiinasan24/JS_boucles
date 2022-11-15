@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/users.css">
+    <title>Utilisateurs</title>
+</head>
+<body>
+    
+    <header>
+        
+        <nav id="headerNav" class="containerFlexRow">
+
+            <div class="headerLogo"></div>
+
+            <ul class="headerNavbar">
+
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="login.html">Login</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="arrayContainer">
+
+                <button class="btnUsers">Montrer les utilisateurs</button>
+
+                <div class="containerToggle hide">
+                    <h2>Utilisateurs</h2>
+                    <div class="array">
+
+                        <div id="js-userFirstName">
+                            <h3>First Name</h3>
+                        </div>
+
+                        <div id="js-userLastName">
+                            <h3>Last Name</h3>
+                        </div>
+
+                        <div id="js-userMail">
+                            <h3>Mail</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="js-addUser" class="hide">
+                    <button class="btnUsers" id="js-btnShowForm">Ajouter un utilisateur</button>
+                </div>
+
+                <div class="hide" id="formNewUser">
+                    <form action="" class="f-col">
+                        <label for="userFirstName">First name:</label>
+                        <input type="text" name="userFirstName" id="newFirstName">
+
+                        <label for="userLastName">Last name:</label>
+                        <input type="text" name="userLastName" id="newLastName">
+
+                        <label for="userMail">Email:</label>
+                        <input type="email" name="userMail" id="newMail">
+
+                        <button class="btnUsers" id="js-btnAddUser" type="button" >Ajouter</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+    
+
+    <script src="assets/js/users.js"></script>
+</body>
+</html>
