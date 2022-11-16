@@ -1,4 +1,4 @@
-const users = JSON.parse(localStorage.getItem("users")) && [
+const users = [
     ["A", "B", "admin@", "admin"],
     ["Anthony", "Bonis", "anthony.bonis@gmail.com", "anthony.bonis"],
     ["Romain", "Cardot", "romain.cardot@gmail.com", "romain.cardot"],
@@ -34,9 +34,14 @@ const newLastName = document.querySelector("#newLastName")
 const newMail = document.querySelector("#newMail")
 
 
-js_userFirstName = document.getElementById("js-userFirstName")
-js_userLastName = document.getElementById("js-userLastName")
-js_userMail = document.getElementById("js-userMail")
+let js_userFirstName = document.getElementById("js-userFirstName")
+let js_userLastName = document.getElementById("js-userLastName")
+let js_userMail = document.getElementById("js-userMail")
+
+
+// Regex : 
+const regexMail =  new RegExp(/^([a-z\d.-]+)@([a-z\d-]+).([a-z]{2,8})(.[a-z]{2,8})?$/)
+const regexPsd = new RegExp(/^[#\w@_-]{8,20}$/)
 
 
 // Ce que j'avais fais :

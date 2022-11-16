@@ -8,18 +8,26 @@ let users = [
     ["Reda", "Ladib", "reda.ladib@gmail.com", "reda.ladib"]
 ]
 
-let inputEmail = document.getElementById("inputEmail");
-let inputPassword = document.getElementById("inputPassword");
+const inputEmail = document.getElementById("inputEmail");
+const inputPassword = document.getElementById("inputPassword");
 const btnLogin = document.getElementById("btnLogIn")
+
+btnLogin.addEventListener("click", checkLogs)
+
+// Regex : 
+const regexMail =  new RegExp(/^([a-z\d.-]+)@([a-z\d-]+).([a-z]{2,8})(.[a-z]{2,8})?$/)
+const regexPsd = new RegExp(/^[#\w@_-]{8,20}$/)
 
 
 function checkLogs() {
 
     for (let i = 0; i < users.length; i++) {
-        userFirstName = users[i][0]
-        userLastName = users[i][1]
-        userMail = users[i][2]
-        userPassword = users[i][3]
+        // let userFirstName = users[i][0]
+        // let userLastName = users[i][1]
+        let userMail = users[i][2]
+        let userPassword = users[i][3]
+        
+        console.log(userMail)
     
         if (inputEmail.value == userMail && inputPassword.value == userPassword) {
             document.location.href="index.html"
@@ -32,13 +40,16 @@ function checkLogs() {
         } else {
             console.log("Mot de passe incorrect")
             return
+
         }
     }
 }
 
-const formLogs = document.getElementById("formLogs")
+// const formLogs = document.getElementById("formLogs")
 
-formLogs.onsubmit = (e) => {
-    checkLogs()
-    e.preventDefault();
-}
+// formLogs.onsubmit = (e) => {
+//     checkLogs()
+//     e.preventDefault();
+// }
+
+

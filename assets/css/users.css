@@ -76,3 +76,16 @@ td {
     text-align: center;
     border: solid 1px;
 }
+
+
+
+/* test */
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.form {
+    gap: 1rem 0;
+}
